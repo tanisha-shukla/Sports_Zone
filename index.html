@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Equipment Store</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1><i class="fas fa-basketball-ball"></i> Sports Zone</h1>
+        <nav>
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+            <a href="#products"><i class="fas fa-dumbbell"></i> Products</a>
+            <a href="#about"><i class="fas fa-info-circle"></i> About Us</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Get the Best Sports Equipment!</h2>
+        <p>High-quality gear for all your sporting needs.</p>
+        <button onclick="scrollToProducts()"><i class="fas fa-shopping-cart"></i> Shop Now</button>
+        
+    </section>
+
+    <!-- Top Deals Section -->
+    <section id="top-deals" class="top-deals">
+        <h2>Top Deals</h2>
+        <p>Grab our limited-time offers before they're gone!</p>
+        <div class="deal-list">
+            <div class="deal-card">
+                <img src="basket.jfif" alt="Discounted Basketball">
+                <h3>Basketball - 20% Off</h3>
+                <p><span class="old-price">₹1600</span> <span class="new-price">₹1280</span></p>
+                <button onclick="addToCart(1280)">Order</button>
+            </div>
+            <div class="deal-card">
+                <img src="soccer2.jfif" alt="Discounted Soccer Ball">
+                <h3>Soccer Ball - 25% Off</h3>
+                <p><span class="old-price">₹2000</span> <span class="new-price">₹1500</span></p>
+                <button onclick="addToCart(1500)">Order</button>
+            </div>
+            <div class="deal-card">
+                <img src="tennis racket.jfif" alt="Discounted Tennis Racket">
+                <h3>Tennis Racket - 15% Off</h3>
+                <p><span class="old-price">₹2400</span> <span class="new-price">₹2040</span></p>
+                <button onclick="addToCart(2040)">Order</button>
+            </div>
+        </div>
+        <div class="cart-total">
+            <h3>Cart Total: ₹<span id="cart-total1">0.00</span></h3>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <div id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="basket.jfif" alt="Basketball">
+                <h3>Basketball</h3>
+                <p>₹1600</p>
+                <button onclick="addToCart(1600)">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="soccer2.jfif" alt="Soccer Ball">
+                <h3>Soccer Ball</h3>
+                <p>₹2000</p>
+                <button onclick="addToCart(2000)">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="tennis racket.jfif" alt="Tennis Racket">
+                <h3>Tennis Racket</h3>
+                <p>₹2400</p>
+                <button onclick="addToCart(2400)">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="cricket bat.jfif" alt="Cricket Bat">
+                <h3>Cricket Bat</h3>
+                <p>₹3600</p>
+                <button onclick="addToCart(3600)">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="hockey stick.png" alt="Hockey Stick">
+                <h3>Hockey Stick</h3>
+                <p>₹2800</p>
+                <button onclick="addToCart(2800)">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="badminton racket.jfif" alt="Badminton Racket">
+                <h3>Badminton Racket</h3>
+                <p>₹1760</p>
+                <button onclick="addToCart(1760)">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="boxing gloves.jfif" alt="Boxing Gloves">
+                <h3>Boxing Gloves</h3>
+                <p>₹2240</p>
+                <button onclick="addToCart(2240)">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="table teenis.jfif" alt="Table Tennis Paddle">
+                <h3>Table Tennis Paddle</h3>
+                <p>₹1200</p>
+                <button onclick="addToCart(1200)">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="golf22.jfif" alt="Golf">
+                <h3>Golf Set</h3>
+                <p>₹2400</p>
+                <button onclick="addToCart(2400)">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="skateboard.jfif" alt="Skateboard">
+                <h3>Skateboard</h3>
+                <p>₹2400</p>
+                <button onclick="addToCart(2400)">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="roller blade.jfif" alt="Roller Blades">
+                <h3>Roller Blades</h3>
+                <p>₹2400</p>
+                <button onclick="addToCart(2400)">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="vollyball.jfif" alt="Volleyball">
+                <h3>Volleyball</h3>
+                <p>₹2400</p>
+                <button onclick="addToCart(2400)">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="javeline.png" alt="Javelin">
+                <h3>Javelin</h3>
+                <p>₹2400</p>
+                <button onclick="addToCart(2400)">Order</button>
+            </div>
+            <div class="product-card">
+                <img src="jumping rope.jfif" alt="Jumping Rope">
+                <h3>Jumping Rope</h3>
+                <p>₹2400</p>
+                <button onclick="addToCart(2400)">Order</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-total">
+        <h3>Cart Total: ₹<span id="cart-total">0.00</span></h3>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing the best sports equipment for all types of athletes, from beginners to professionals.</p>
+    </section>
+
+    <section id="pricing-table" class="pricing-table">
+        <h2>Product Pricing</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Original Price</th>
+                    <th>Discounted Price</th>
+                    <th>Order Now</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basketball</td>
+                    <td>₹1600</td>
+                    <td>₹1280</td>
+                    <td><button onclick="addToCart(1280)">Order</button></td>
+                </tr>
+                <tr>
+                    <td>Soccer Ball</td>
+                    <td>₹2000</td>
+                    <td>₹1500</td>
+                    <td><button onclick="addToCart(1500)">Order</button></td>
+                </tr>
+                <tr>
+                    <td>Tennis Racket</td>
+                    <td>₹2400</td>
+                    <td>₹2040</td>
+                    <td><button onclick="addToCart(2040)">Order</button></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+    <a href="https://prokicksports.com/?utm_source=google&utm_medium=cpc&utm_campaign=BS_Brand_Items&gad_source=1&gclid=Cj0KCQiA0MG5BhD1ARIsAEcZtwQLV1TjaRiRVIJIDnNisNHaL8EIoXLBm5-O6vW_JNnxORYdWvZUetQaAhGIEALw_wcB" target="_blank">Visit Our Product Page</a>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Sports Zone. All Rights Reserved.</p>
+        <p>Follow us:
+            <a href="https://www.linkedin.com/in/tanisha-shukla-1855a2262" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+            <a href="https://x.com/TanishaShukla05" target="_blank"><i class="fab fa-twitter"></i> Twitter</a> |
+            <a href="https://www.instagram.com/tanisha_shukla_" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </p>
+        <p>Privacy Policy | Terms of Service</p>
+    </footer>
+
+    
+</body>
+</html>
